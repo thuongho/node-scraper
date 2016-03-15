@@ -30,7 +30,7 @@
             $scope.item.imgThumb = data.data.img;
             $scope.item.description = data.data.desc;
           }, function(error){
-            console.log('failed to return from scrape');
+            console.log('failed to return from scrape', error);
             $scope.loading = false;
             $scope.item.link = "";
             $scope.gotScrapeResults = false;
