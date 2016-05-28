@@ -30,8 +30,8 @@ var port = 8000;
 //   .pipe(destination);
 
 // EXAMPLE 3
-var destination = fs.createWriteStream('./downloads/google2.html');
-var url = 'http://google.com';
+var destination = fs.createWriteStream('./downloads/fish.js');
+var url = 'http://waterservices.usgs.gov/nwis/iv/?format=json&bBox=-83.000000,36.500000,-81.000000,38.500000&period=P365D&parameterCd=00010,00060';
 
 // request(url)
 //   .pipe(destination)

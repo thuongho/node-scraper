@@ -3,9 +3,12 @@ var gulp = require('gulp'),
 
 gulp.task('default', function(){
   nodemon({
-    script: 'indeed_ex.js',
+    script: 'cheerio_ex.js',
     ext: 'js',
-    ignore: ['./node_modules/**']
+    ignore: [
+      './node_modules/**',
+      './downloads/**'
+    ]
   })
   .on('restart', function(){
     console.log('Restarting...');
